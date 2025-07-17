@@ -1,0 +1,128 @@
+.btn-expandir{
+    display: none;
+}
+.menu-lateral {    
+    width: 100%;
+    padding: 10px 0px;
+    background-color: var(--rosa-padrao);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-lateral ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 150px;
+
+
+}
+.menu-lateral a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-lateral a:hover {
+    background-color: var(--rosa-escuro);
+    color: white;
+}
+
+.menu-lateral .active {
+    color: var(--rosa-muito-escuro);
+}
+
+.menu-lateral span.icon {
+    margin-right: 5px;
+}
+
+@media (max-width: 1100px){
+    /* Estilos para a lista */
+    .menu-lateral ul {
+        gap: 100px; /* Espaçamento entre os itens */
+    }
+}
+@media (max-width: 800px){
+    .menu-lateral, .menu-lateral ul{
+        display: inline;
+    }
+
+    header{
+        height: 100%;
+    }
+
+    .btn-expandir{
+        display: flex;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    nav.menu-lateral{
+        width: 60px;
+        height: 100%;
+        padding: 40px 0px 40px 1%;
+        background-color: var(--rosa-padrao);
+        box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.150);
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: .3s;
+        overflow: hidden;
+    }
+
+    nav.menu-lateral:hover{
+        width: 230px;
+    }
+    .btn-expandir > i{
+        color: white;
+        cursor: pointer;
+        font-size: 24px;
+    }
+    ul{
+        height: 100%;
+        
+    }
+
+    ul li.item-menu{
+        transition: .2s;
+    }
+
+    ul li.item-menu a{
+        padding: 20px 4%;
+        display: flex;
+        margin-bottom: 10px;
+
+
+    }
+
+    ul li.item-menu a span.txt-link{
+        margin-left: 20px;
+
+    }
+
+    ul li.item-menu a span.icon i{
+        font-size: 30px;
+        margin-left: 9px;
+
+    }
+}
+@media (max-width: 400px){
+    ul li.item-menu a span.icon i{
+        font-size: 20px;
+        margin-left: 9px;
+    }
+    nav.menu-lateral{
+        width: 45px;
+    }
+    .btn-expandir i{
+        font-size: 20px;
+    }
+}

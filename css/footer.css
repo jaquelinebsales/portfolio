@@ -1,0 +1,28 @@
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: var(--rosa-muito-escuro);
+    color: white;
+    max-width: 100%;
+}
+footer a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+@media (max-width: 800px) {
+    footer{
+        margin-left: 66px;
+    }
+}
+
+@media (max-width: 400px){
+    footer p{
+        font-size: 0.8em;
+    }
+    footer{
+        margin-left: 46px;
+    }
+
+}
