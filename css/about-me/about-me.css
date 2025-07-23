@@ -1,7 +1,62 @@
-.group-about-me{
-    height: 100vh;
+body {
+    min-height: 100vh;
 }
 
-.group-about-me p{
-    margin: 50px;
+.q-teacher{
+    background-blend-mode: overlay;
+    background: url(../../imagens/avatar-eu.png) rgba(41, 0, 16, 0.678) no-repeat;
+    background-position: 130% 50%;
+    background-size: 80%;
+    background-attachment: fixed;
+    min-height: 150px;
+
+    display: grid;
+    padding: 30px;
+
+    box-shadow: inset 0px -10px 20px rgba(0, 0, 0, 0.205);
+
+    
+}
+.q-teacher blockquote{
+
+}
+
+.q-teacher figcaption{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.q-teacher p{
+    font-size: 2em;
+    color: white;
+    font-style: italic;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+
+.text-about-me{
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
+}
+.text-about-me p{
+    text-align: justify;
+    margin-bottom: 10px;
+
+}
+
+h1{
+    text-align: end;
+    margin: 10px 30px;
+}
+
+.codar{
+    font-style: italic;
+    font-weight: bold;
+    color: var(--rosa-muito-escuro);
+}
+.artedecodar{
+    text-decoration: underline;
 }

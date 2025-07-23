@@ -56,9 +56,9 @@
     <main>
         <section class="group-apresentacao">
             <div class="apresentacao-txt">
-                <p>Olá, eu sou</p>
-                <h1>Jaqueline Sales.</h1>
-                <p>Seja bem-vindo(a) ao meu site de portfólio!</p>
+                <p class="hidden">Olá, eu sou</p>
+                <h1 class="hidden">Jaqueline Sales.</h1>
+                <p class="hidden">Seja bem-vindo(a) ao meu site de portfólio!</p>
             </div>
             <div class="apresentacao-img">
                 <picture>
@@ -68,37 +68,38 @@
                 </picture>
             </div>
         </section>
-        <div class="projects-line">
+        <div class="projects-line p-session">
             <div class="line-1"></div>
             <p class="projects-line-text">projetos</p>
             <div class="line-2"></div>
         </div>
         <section class="group-projetos">
-            <button class="btn-proj">
+            <button class="btn-proj p-session">
+                <img src="imagens/pokemon.png" alt="Ilustração de uma Poke Ball">
+                <p>Projeto de pokedex</p>
+                <p class="hidden-text">Um projeto usando a clássica API dos pokemons. Feito com JavaScript, HTML e CSS.</p>
+            </button>
+            <button class="btn-proj p-session">
                 <img src="imagens/avatar-eu(150px).png" alt="">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium amet totam rerum.</p>
             </button>
-            <button class="btn-proj">
+            <button class="btn-proj p-session">
                 <img src="imagens/avatar-eu(150px).png" alt="">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium amet totam rerum.</p>
             </button>
-            <button class="btn-proj">
+            <button class="btn-proj p-session">
                 <img src="imagens/avatar-eu(150px).png" alt="">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium amet totam rerum.</p>
             </button>
-            <button class="btn-proj">
+            <button class="btn-proj p-session">
                 <img src="imagens/avatar-eu(150px).png" alt="">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium amet totam rerum.</p>
             </button>
-            <button class="btn-proj">
-                <img src="imagens/avatar-eu(150px).png" alt="">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium amet totam rerum.</p>
-            </button>
-            <button class="btn-proj">
+            <button class="btn-proj p-session">
                 <img src="imagens/avatar-eu(150px).png" alt="">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam incidunt aliquid natus.</p>
             </button>
-            <button class="btn-proj">
+            <button class="btn-proj p-session">
                 <img src="imagens/avatar-eu(150px).png" alt="">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio saepe eaque voluptatem quos rem.</p>
             </button>
@@ -112,5 +113,7 @@
     <footer>
         <p>Portfolio de <a href="https://github.com/jaquelinebsales" target="_blank">Jaqueline Sales</a></p>
     </footer>
+    <script src="scripts/animation-scroll.js"></script>
+    <script src="scripts/mostrar-texto-home.js"></script>
 </body>
 </html>
