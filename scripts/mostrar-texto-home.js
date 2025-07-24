@@ -1,11 +1,13 @@
-const hoverArea = document.querySelector('.hover-area');
-const textoAparece = document.getElementById('texto-aparece');
+const hoverArea = document.querySelectorAll('.hover-area');
+const textoAparece = document.querySelectorAll('.hidden-text');
 
 // Adiciona os eventos de mouse
-hoverArea.addEventListener('mouseover', function() {
-  textoAparece.style.display = 'block';
-});
+hoverArea.forEach((area, index) => {
+  area.addEventListener('mouseover', () => {
+    textoAparece[index].style.display = 'block';
+  });
 
-hoverArea.addEventListener('mouseout', function() {
-  textoAparece.style.display = 'none';
+  area.addEventListener('mouseout', () => {
+    textoAparece[index].style.display = 'none';
+  });
 });
