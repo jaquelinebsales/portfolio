@@ -179,9 +179,6 @@ img{
         width: 400px;
         height: auto;
     }
-    main{
-        margin-left: 46px;
-    }
     .group-apresentacao{
         padding: 0px;
         padding: 20px;
@@ -195,10 +192,7 @@ img{
 }
 
 @media (max-width: 800px){
-    main{
-        margin-left: 66px;
-    }
-      main h1{
+    main h1{
         font-size: 2em;
     }
 
